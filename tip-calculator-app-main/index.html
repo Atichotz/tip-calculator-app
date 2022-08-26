@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+
+</head>
+<body>
+  <div class="container">
+    <img class="logo" src="images/logo.svg" alt="">
+    <div class="card">
+      <div class="card-l">
+        <div class="bill">
+          <h2>Bill</h2>
+          <div class="input-group">
+             <input id="inp-bill" type="text" placeholder="0">
+             <img class="icon" src="images/icon-dollar.svg" alt="">
+          </div>
+        </div>
+        <div class="select-tip">
+          <h2>Select Tip %</h2>
+          <div class="btn-tip">
+            <a class="tip">5%</a>
+            <a class="tip">10%</a>
+            <a class="tip active-tip">15%</a>
+            <a class="tip">25%</a>
+            <a class="tip">50%</a>
+            <input id="inp-custom"type="text" placeholder="Custom">
+          </div>
+        </div>
+        <div class="number-of-people">
+          <div class="error" style="display:flex; justify-content:space-between;">
+            <h2>Number of People</h2>
+            <span class="cb0">Can't be zero</span>
+          </div>
+          <div class="input-group">
+            <span><img src="images/icon-person.svg" alt=""></span>
+            <input id="inp-people" class="" type="text" placeholder="0">
+          </div>
+        </div>
+      </div>
+      <div class="card-r">
+        <div class="tipAmount">
+          <h2>Tip Amount</h2>
+          <p class="tipAmount-price">฿0.00</p>
+        </div>
+        <div class="totalPerson">
+          <h2>Total<span class="per-person"><br>/ person</span></h2>
+          <p class="totalPerson-price">฿0.00</p>
+        </div>
+        <a href="#" class="btn-reset">RESET</a>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
